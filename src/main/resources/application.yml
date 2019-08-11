@@ -1,5 +1,17 @@
 spring:
   application:
     name: blog-message-service
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+    datasource:
+      url: jdbc:mysql://localhost:3306/blog
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
+
   server:
-port: 9090
+    port: 9090
